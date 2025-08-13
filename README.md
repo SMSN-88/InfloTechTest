@@ -37,6 +37,7 @@ The Add/Edit user forms
 
 The View user screen
 
+---
 
 3. Actions Section (CRUD Functionality)
 The application now supports full CRUD operations for users:
@@ -57,6 +58,8 @@ Provide clear success or error feedback to the end user.
 
 Redirect appropriately on completion.
 
+---
+
 Unit Tests (Enhancements Only)
 To support the above changes, additional unit tests were written extending the existing UserControllerTests suite.
 The new tests verify:
@@ -68,5 +71,6 @@ DateOfBirth – That the DateOfBirth property is correctly mapped and preserved 
 CRUD Actions – That Add, Edit, and Delete controller actions call the appropriate IUserService methods and return the expected view or redirect results.
 
 These tests integrate with the existing mocking framework (Moq) and assertion library (FluentAssertions).
+
 
 
