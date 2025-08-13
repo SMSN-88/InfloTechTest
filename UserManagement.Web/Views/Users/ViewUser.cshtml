@@ -1,0 +1,14 @@
+﻿@model UserManagement.Models.User
+
+<h2>User Details</h2>
+
+<ul>
+    <li><strong>Forename:</strong> @Model.Forename</li>
+    <li><strong>Surname:</strong> @Model.Surname</li>
+    <li><strong>Email:</strong> @Model.Email</li>
+    <li><strong>Date of Birth:</strong> @Model.DateOfBirth.ToString()</li>
+    <li><strong>Active:</strong> @(Model.IsActive ? "Yes" : "No")</li>
+</ul>
+
+<a asp-action="List" class="btn btn-secondary">Back to List</a>
+

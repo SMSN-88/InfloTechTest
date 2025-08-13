@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
+using UserManagement.Models;
 
 namespace UserManagement.Data;
 
@@ -29,4 +29,6 @@ public interface IDataContext
     void Update<TEntity>(TEntity entity) where TEntity : class;
 
     void Delete<TEntity>(TEntity entity) where TEntity : class;
+    void Add(User user);
+   
 }
